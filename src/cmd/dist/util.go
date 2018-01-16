@@ -443,6 +443,8 @@ func main() {
 			gohostarch = "ppc64le"
 		case strings.Contains(out, "ppc64"):
 			gohostarch = "ppc64"
+		case strings.Contains(out, "sparc64"):
+			gohostarch = "sparc64"
 		case strings.Contains(out, "mips64"):
 			gohostarch = "mips64"
 			if elfIsLittleEndian(os.Args[0]) {
